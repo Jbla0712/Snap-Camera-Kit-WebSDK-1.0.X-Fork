@@ -20,7 +20,7 @@ https://github.com/egemengulpinar/Snap-Camera-Kit-WebSDK/assets/71253469/413da48
 ## Install Dependencies(Local)
 Install Snap Camera-Kit package :
 
-```  npm install @snap/camera-kit ``` 
+```  npm i @snap/camera-kit ``` 
 
 ``` npm install ```
 
