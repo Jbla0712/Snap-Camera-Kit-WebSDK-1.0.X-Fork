@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { bootstrapCameraKit, CameraKitSession, createMediaStreamSource, Transform2D, Lens } from "@snap/camera-kit";
 import './SnapCamera.css';
+
 let mediaStream;
 
 const SnapCamera = () => {
@@ -46,7 +47,14 @@ const SnapCamera = () => {
       mediaStream.getVideoTracks()[0].stop();
     }
 
-    mediaStream = await navigator.mediaDevices.getUserMedia({ video: { deviceId } });
+    // Forcer la résolution 16:9 (ex : 1920x1080)
+    mediaStream = await navigator.mediaDevices.getUserMedia({
+      video: {
+        deviceId,
+        width: { ideal: 1920 },  // Résolution 16:9
+        height: { ideal: 1080 }
+      }
+    });
 
     const source = createMediaStreamSource(mediaStream);
 
