@@ -1,5 +1,8 @@
 # Snap-Camera-Kit-WebSDK [TR](https://github.com/egemengulpinar/Snap-Camera-Kit-WebSDK/blob/main/docs/README_TR.md) | [ES](https://github.com/egemengulpinar/Snap-Camera-Kit-WebSDK/blob/main/docs/README_ES.md)
 
+Original repository https://github.com/egemengulpinar/Snap-Camera-Kit-WebSDK
+Thanks to egemengulpinar
+ 
 Basic Snap Camera-Kit Deployment & Integration guide. For more details and documentation please check [Docs Snap CameraKit WebSDK ](https://docs.snap.com/camera-kit/quick-start/integrate-sdk/integrate-sdk-web/web-configuration)
 
 In this guide, we also deploy this project via **vercel** using with **NextJS**. For see results, please check Demo app below.
