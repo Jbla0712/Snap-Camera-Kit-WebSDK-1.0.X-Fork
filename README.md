@@ -79,8 +79,3 @@ I know there's a security issue with the token being visible when you're inspect
 
 If you contribute and fix this issue feel free to pull requests. 
 
-## Support
-
-You can contact with me via e-mail & discord
-- egemengulpinar@gmail.com  
-- egemengulpinar#3536
