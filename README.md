@@ -36,8 +36,8 @@ Install Snap Camera-Kit package :
 
 
 
-## Token Settings
-# FIRST rename ".env.template" to ".env" 
+# Token Settings
+## FIRST rename ".env.template" to ".env" 
 Insert your token into **.env** file that are taken by [camera-kit.snapchat.com](camera-kit.snapchat.com/) and save it.
 - **API TOKEN**
 - **LENS ID** 
