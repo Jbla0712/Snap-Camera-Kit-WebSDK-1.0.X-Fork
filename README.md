@@ -31,7 +31,6 @@ Install Snap Camera-Kit package :
  With snap camera kit 1.0.0 for example or 0.23 and other older versions
 **The different version is here https://www.npmjs.com/package/@snap/camera-kit/v/1.0.0?activeTab=versions**
 
-
 ### full screen 16/9 version canvas, You can adjust the camera rendering window by editing the file **SnapCamera.css** and/or **SnapCamera.jsx**
 
 
