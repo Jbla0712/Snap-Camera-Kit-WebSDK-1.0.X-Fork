@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { bootstrapCameraKit, CameraKitSession, createMediaStreamSource, Transform2D, Lens  } from "@snap/camera-kit";
+import { bootstrapCameraKit, CameraKitSession, createMediaStreamSource, Transform2D, Lens } from "@snap/camera-kit";
 import './SnapCamera.css';
 let mediaStream;
 
@@ -13,7 +13,6 @@ const SnapCamera = () => {
   useEffect(() => {
     const init = async () => {
       const cameraKit = await bootstrapCameraKit({ apiToken: apiToken });
-      
       const session = await cameraKit.createSession();
 
       // Use the ref to get the canvas element
@@ -21,8 +20,16 @@ const SnapCamera = () => {
       if (canvas) {
         canvas.replaceWith(session.output.live);
       }
+
       const { lenses } = await cameraKit.lenses.repository.loadLensGroups([lensGroupId]);
-      session.applyLens(lenses[19]);
+
+      // Vérification si le lens existe avant de l'appliquer
+      if (lenses[19]) {
+        session.applyLens(lenses[19]);
+      } else {
+        console.error("Lens avec l'index 19 non trouvé.");
+      }
+
       await setCameraKitSource(session);
       await attachCamerasToSelect(session);
       console.log('attachCamerasToSelect is called');
@@ -80,7 +87,11 @@ const SnapCamera = () => {
     lensSelectRef.current.addEventListener('change', (event) => {
       const lensId = event.target.selectedOptions[0].value;
       const lens = lenses.find((lens) => lens.id === lensId);
-      if (lens) session.applyLens(lens);
+      if (lens) {
+        session.applyLens(lens);
+      } else {
+        console.error("Lens non trouvé pour l'ID sélectionné.");
+      }
     });
   };
 
