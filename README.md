@@ -28,11 +28,11 @@ Install Snap Camera-Kit package :
 ``` npm install ```
 
 ## You can install different versions of snap camera kit in order to operate your old lens based on Lens studio 4.XX or your new lens based on Lens studio 5.XX.
-## With snap camera kit 1.0.0 for example or 0.23 and other older versions
-## **The different version is here https://www.npmjs.com/package/@snap/camera-kit/v/1.0.0?activeTab=versions**
+ With snap camera kit 1.0.0 for example or 0.23 and other older versions
+**The different version is here https://www.npmjs.com/package/@snap/camera-kit/v/1.0.0?activeTab=versions**
 
 
-## full screen 16/9 version canvas, You can adjust the camera rendering window by editing the file **SnapCamera.css** and/or **SnapCamera.jsx**
+### full screen 16/9 version canvas, You can adjust the camera rendering window by editing the file **SnapCamera.css** and/or **SnapCamera.jsx**
 
 
 
